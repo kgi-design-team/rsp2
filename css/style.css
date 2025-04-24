@@ -3069,7 +3069,7 @@ code {
 .banner {
   position: relative;
   overflow: hidden;
-  background: url(../images/kvBg.jpg) no-repeat center top/1920px auto;
+  background: url(../images/kv-Bg.jpg) no-repeat center top/100% auto;
 }
 @media screen and (max-width: 1399px) {
   .banner {
@@ -3095,6 +3095,7 @@ code {
   width: 559px;
   top: 10px;
   left: 0%;
+  padding-top:30px;  
 }
 .banner-kv-man {
   width: 100%;
@@ -3132,7 +3133,16 @@ code {
 .banner-content .twoBtn > a img {
   width: 100%;
 }
+@media screen and (max-width: 1699px) {
+	.banner-kv img{       
+		width: 170%;
+		padding: 0 90px;}
+	.banner-content{    padding: 290px 0 140px;}
+}
 @media screen and (max-width: 1399px) {
+	.banner-kv img{       
+		width: 180%;
+        padding: 0px 90px;}	
   .banner-content {
     margin-left: 41%;
     padding: 320px 0 100px;
@@ -3147,6 +3157,9 @@ code {
   }
 }
 @media screen and (max-width: 1199px) {
+	.banner-kv img{
+		width: 180%;
+        padding: 0px 115px;}	
   .banner-content {
     margin-left: 42%;
     padding: 22% 0 5%;
@@ -3167,10 +3180,12 @@ code {
   }
 }
 @media screen and (max-width: 991px) {
+
   .banner-kv {
     position: relative;
     margin: 0 auto;
     width: 60%;
+	  display: none;
   }
   .banner-kv-man {
     display: none;
@@ -3204,6 +3219,7 @@ code {
   }
 }
 @media screen and (max-width: 767px) {
+
   .banner-kv {
     position: relative;
     top: auto;
@@ -3211,6 +3227,7 @@ code {
     margin: 0 auto;
     padding-top: 20px;
     width: 75%;
+	   display: none;
   }
   .banner-content {
     padding: 110% 0 5%;
@@ -3222,6 +3239,7 @@ code {
     margin-bottom: -5%;
   }
 }
+
 
 @keyframes kvMan {
   100% {
